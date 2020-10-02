@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>Herz & Haltung</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="./assets/js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+  @font-face{
+  font-family: 'bebascaps';
+  src: url('./assets/fonts/BebasNeue-Regular.ttf');
+  }
+
+  @font-face{
+  font-family: 'robotofliess';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+  }
+
+  @font-face{
+  font-family: 'noodleprog';
+  src: url('./assets/fonts/big_noodle_titling.ttf');
+  }
+  
+  *{
+  font-family: "robotofliess", sans-serif
+  }
+
+  h1{
+  font-family: "bebascaps", sans-serif;
+  font-size:50px;
+  color: #b79a54;
+  }
+
+  .noodleblack{
+  font-family: 'noodleprog';
+  font-size: 25px;
+  color: black;
+  }
+  .noodlered{
+  font-family: 'noodleprog';
+  font-size: 25px;
+  color: #cd1719;
+  }
+  .noodlegray{
+  font-family: 'noodleprog';
+  font-size: 25px;
+  color: gray;
+  }
+  .noodlesmal{
+  font-family: 'noodleprog';
+  font-size: 20px;
+  color: black;
+  }
+
+  .bgimg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./assets/images/leiter_left.jpg');
+  min-height: 100%;
+  }
+
+  ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+  </style>
+</head>
+
+<body>
+  
+  <!-- Sidebar with image -->
+  <nav class="sidebar hide-medium hide-small" style="width:40%"><div class="bgimg animate-opacity"></div></nav>
+  
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="sidebar black animate-right xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="button black xxxlarge display-topright" style="padding:0 12px;"> <i class="fa fa-remove"></i></a>
+    <div class="bar-block center">
+      <a href="index.html" class="bar-item button text-grey hover-black" onclick="closeNav()">Home</a>
+      <a href="#portfolio" class="bar-item button text-grey hover-black" onclick="closeNav()">Inhalt</a>
+      <a href="#about" class="bar-item button text-grey hover-black" onclick="closeNav()">Wir</a>
+      <a href="#contact" class="bar-item button text-grey hover-black" onclick="closeNav()">Kontakt</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="main padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="button top white xxlarge text-grey hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+  <header class="container" style="padding:50px"> <div class="animate-opacity animate-right half"><h1>Programm der Festwoche</h1></div></header>
+
+  <div style="margin-left:100px; margin-bottom: 10%; margin-right: 5%;">
+
+  <ul>
+    <li class="noodleblack">Samstag || 31.10.2020 || <a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Jubiläumskonzert 31.10.2020, 17:00 Uhr"   class="hover-text-tomato noodleblack">17:00 Uhr </a> || <a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Jubiläumskonzert 31.10.2020, 18:30 Uhr"   class="hover-text-tomato noodleblack">18:30 Uhr </a> || <a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Jubiläumskonzert 31.10.2020, 20:15 Uhr"   class="hover-text-tomato noodleblack">20:15 Uhr </a></li>
+    <li class="noodlegray">Johann Sebastian Bach und gute Laune</li>
+    <li class="noodlered">Jubiläumskonzert Friedenskirche 125 Jahre</li>
+    <li class="noodlegray">Chor der Friedenskirche & Kammerorchester St. Pauli</li>
+    <li><a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Jubiläumskonzert 31.10.2020&body=ACHTUNG, bitte Uhrzeit angeben!"   class="hover-text-tomato noodlesmal">Reservierung erforderlich</a></li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Sonntag || 01.11.2020 || 10:00 Uhr</li>
+    <li class="noodlegray">Reformation ist jeden Tag</li>
+    <li class="noodlered">Familienkirche bis 125 Jahre</li>
+    <li class="noodlegray">Pastorin Vanessa von der Lieth</li>
+    <li><a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Familienkirche 01.11.2020, 10:00 Uhr"   class="hover-text-tomato noodlesmal">Reservierung erforderlich</a></li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Sonntag || 01.11.2020 || 17:00 Uhr</li>
+    <li class="noodlegray">Blau ist die Farbe Jazz ist die Musik</li>
+    <li class="noodlered">Jazzkonzert mit Standard und Latein aus 125 Jahren</li>
+    <li class="noodlegray">L. Axelsson | H. Marczinski | M. Schirmer | P. Steen | T. Heise</li>
+    <li class="noodlesmal">Spende erbeten | <a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Jazzkonzert 01.11.2020, 17:00 Uhr"   class="hover-text-tomato noodlesmal">Reservierung erforderlich</a></li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Dienstag || 03.11.2020 || 14:00 bis 16:00 Uhr</li>
+    <li class="noodlegray">Mach hoch die Tür</li>
+    <li class="noodlered">Offene Friedenskirche 125 Minuten</li>
+    <li class="noodlegray">Türsteher* und Küster*innen</li>
+    <li class="noodlesmal">Abstand erforderlich</li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Dienstag || 03.11.2020 || 17:30 Uhr</li>
+    <li class="noodlegray">Schalom: Gespräche und Impulse zum Frieden</li>
+    <li class="noodlered">Stilles Schalom-Gebet für die eine Welt</li>
+    <li class="noodlegray">Pastorin Irmgard Nauck</li>
+    <li class="noodlesmal">Gedanken sind frei im Seitenschiff Nord</li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Dienstag || 03.11.2020 || 19:00 Uhr</li>
+    <li class="noodlegray">Alte Steine und neue Räume</li>
+    <li class="noodlered">Kirche digital auf dem Podium der Friedenskirche</li>
+    <li class="noodlegray">Die Möglichkeiten digitaler Gemeinde</li>
+    <li><a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Kirche digital 03.11.2020, 19:00 Uhr"   class="hover-text-tomato noodlesmal">Reservierung erforderlich</a></li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Donnerstag || 05.11.2020 || 14:00 bis 16:00 Uhr</li>
+    <li class="noodlegray">Mach hoch die Tür</li>
+    <li class="noodlered">Offene Friedenskirche 125 Minuten</li>
+    <li class="noodlegray">Türsteher* und Küster*innen</li>
+    <li class="noodlesmal">Abstand erforderlich</li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Donnerstag || 05.11.2020 || 17:30 Uhr</li>
+    <li class="noodlegray">Schalom: Gespräche und Impulse zum Frieden</li>
+    <li class="noodlered">Schweige und höre, neige deines Herzens Ohr, suche den Frieden</li>
+    <li class="noodlegray">Pastor Michael Schirmer</li>
+    <li class="noodlesmal">Gedanken sind frei im Seitenschiff Nord</li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Donnerstag || 05.11.2020 || 19:00 Uhr</li>
+    <li class="noodlegray">Zauberei und magische Wortakrobatik</li>
+    <li class="noodlered">Lesung Harry Potter op Platt</li>
+    <li class="noodlegray">Hartmut Cyriax und Verstärkung</li>
+    <li class="noodlesmal">Spende erbeten | <a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Harry Potter 05.11.2020, 19:00 Uhr"   class="hover-text-tomato noodlesmal">Reservierung erforderlich</a></li>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Freitag || 06.11.2020 || 17:30 Uhr</li>
+    <li class="noodlegray">Schalom: Gespräche und Impulse zum Frieden</li>
+    <li class="noodlered">Sagt als Erstes: Friede diesem Haus</li>
+    <li class="noodlegray">Pastor Lennart Berndt</li>
+    <li class="noodlesmal">Gedanken sind frei im Seitenschiff Nord</li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Freitag || 06.11.2020 || 19:00 Uhr</li>
+    <li class="noodlegray">125 kluge Fragen</li>
+    <li class="noodlered">Kneipenquiz in der Friedenskirche</li>
+    <li class="noodlegray">Evangelische Jugend Brunnenhof</li>
+    <li class="noodlesmal">Fantasie erbeten | <a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Kneipenquiz 06.11.2020, 19:00 Uhr"   class="hover-text-tomato noodlesmal">Reservierung erforderlich</a></li>
+  </ul>
+  
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Samstag || 07.11.2020 || 14:00 bis 16:00 Uhr</li>
+    <li class="noodlegray">Mach hoch die Tür</li>
+    <li class="noodlered">Offene Friedenskirche 125 Minuten</li>
+    <li class="noodlegray">Türsteher* und Küster*innen</li>
+    <li class="noodlesmal">Abstand erforderlich</li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Samstag || 07.11.2020 || 17:30 Uhr</li>
+    <li class="noodlegray">Schalom: Gespräche und Impulse zum Frieden</li>
+    <li class="noodlered">Ich bin nicht gekommen, Frieden zu bringen, sondern das Schwert</li>
+    <li class="noodlegray">Vikar Hartwig Freese</li>
+    <li class="noodlesmal">Gedanken sind frei im Seitenschiff Nord</li>
+  </ul>
+  
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <ul>
+    <li class="noodleblack">Samstag || 07.11.2020 || 19:00 Uhr</li>
+    <li class="noodlegray">Was ist Glaubensfreiheit für dich?</li>
+    <li class="noodlered">Altonaer Religionsgemeinschaften im Gespräch</li>
+    <li class="noodlegray">in Moschee und Kirche</li>
+    <li><a href="mailto:noellenburg@ikm-hamburg.de?subject=Anmeldung Glaubensfreiheit 07.11.2020, 19:00 Uhr" class="hover-text-tomato noodlesmal">Reservierung erforderlich</a></li>
+  </ul>
+
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+  
+  <ul>
+    <li class="noodleblack">Sonntag || 08.11.2020 || 10:00 Uhr</li>
+    <li class="noodlegray">Lasst uns gratulieren</li>
+    <li class="noodlered">Festgottesdienst Friedenskirche 125 Jahre</li>
+    <li class="noodlegray">Mit Propst Frie Bräsen und dem Pfarrteam Altona-Ost</li>
+    <li><a href="mailto:buero@gemeinde-altona-ost.de?subject=Anmeldung Festgottesdienst 08.11.2020, 10:00 Uhr" class="hover-text-tomato noodlesmal">Reservierung erforderlich</a></li>
+  </ul>
+
+  
+  <hr style="height:10px;width: 100px; margin: 50px 0px 50px 0px; background-color:black">
+
+  <svg class="quarter" width="40" height="200"  style="margin-right:-150px"><rect width="40" height="200" style="fill:#cd1719;"/></svg> 
+
+  <p>Unser aktuelles Hygienekonzept sieht vor, dass sie sich zu unseren Veranstaltungen im Kirchenbüro anmelden. Nur eine Reservierung sichert Ihnen Ihren Platz.<br>
+  Wir freuen uns über Eure und Ihre Besuche bei uns! <br><br>
+  <em><b> Anmeldung ab 05. Oktober im Gemeindebüro möglich.</b></em><br><br>
+
+  <b>Kontakt</b><br>
+  E-Mail: <a href="mailto:buero@gemeinde-altona-ost.de" style="text-decoration: none;" class="hover-text-tomato">buero@gemeinde-altona-ost.de</a> <br>Telefon: 040 - 43 4334</p>
+  
+</div>
+
+  <footer class="container padding-16 light-grey center opacity xlarge" style="margin:-24px"><p class="medium"><a href="https://www.gemeinde-altona-ost.de" target="_blank" style="text-decoration: none;" class="hover-text-tomato">www.gemeinde-altona-ost.de</a></p></footer>
+
+</div>
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
