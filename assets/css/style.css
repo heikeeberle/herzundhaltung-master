@@ -240,3 +240,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .active-link {
     font-style: italic;
 }
+.margin-left-responsive {
+    margin-left: 100px;
+}
+@media (max-width:993px) {
+    .margin-left-responsive {
+        margin-left: 10px;
+    }
+}
